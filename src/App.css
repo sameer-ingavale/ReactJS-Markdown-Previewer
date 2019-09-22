@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(250, 250, 250, 00.1);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+@font-face {
+  font-family: 'camingo';
+  src: url(fonts/camingo-regular.ttf)
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(fonts/Lato-Regular.ttf)
+}
+
+.input-textarea {
+  font-family: camingo;
+  width:90vw;
+  height: 40vh;
+  background-color: #282C34;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  border-radius: 12px;
+  margin-top: 7vh;
+  margin-bottom: 6vh;
+  padding: 20px 25px 23px 25px;
+  box-shadow: 0px 0px 20px 0px #aaa;
+  border: none;
+  line-height: 23px;
+}
+
+.output-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90vw; 
+}
+
+.side-footer {
+  margin-right: -7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#side-text {
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  font-family: lato;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+#side-image {
+  writing-mode: vertical-rl;
+}
+
+.output-area {
+  overflow-wrap: break-word;
+  width: 85vw;
+  padding: 0px 25px 20px 25px;
+  font-size: 14px;
+  font-family: lato;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.React-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20px;
+  pointer-events: none;
+  margin-left: -1px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
